@@ -6,12 +6,12 @@ focusing on variables, control structures, functions, collections, and more.
 
 ## Hello World
 
-### Python
+#### Python
 ```python
 print("Hello, World!")
 ```
 
-### Go
+#### Go
 ```go
 package main
 
@@ -24,7 +24,7 @@ func main() {
 
 ## Variables and Data Types
 In Python, you declare variables and their types dynamically:
-
+#### Python
 ```python
 x = 10
 y = 3.14
@@ -32,6 +32,7 @@ name = "Budi"
 is_valid = True
 ```
 
+#### Go
 ```go
 package main
 
@@ -48,7 +49,7 @@ func main() {
 ```
 
 ## If-Else Statement
-Python
+#### Python
 ```python
 x = 10
 if x > 5:
@@ -57,7 +58,7 @@ else:
     print("x is 5 or less")
 ```
 
-Go
+#### Go
 ```go
 x := 10
 if x > 5 {
@@ -67,13 +68,13 @@ if x > 5 {
 }
 ```
 
-
 ## For Loop
+#### Python
 ```python
 for i in range(5):
     print(i)
 ```
-
+#### Go
 ```go
 for i := 0; i < 5; i++ {
     fmt.Println(i)
@@ -81,6 +82,7 @@ for i := 0; i < 5; i++ {
 ```
 
 ## While Loop
+#### Python
 ```python
 i = 0
 while i < 5:
@@ -88,7 +90,7 @@ while i < 5:
     i += 1
 
 ```
-
+#### Go
 ```go
 i := 0
 for i < 5 {
@@ -99,6 +101,7 @@ for i < 5 {
 
 
 ## Switch/Case Statement
+#### Python
 ```python
 day = 'My day'
 match day:
@@ -109,7 +112,7 @@ match day:
     case _:
         print("That's not a valid day of the week.")
 ```
-
+#### Go
 ```go
  day := "my day"
 
@@ -125,6 +128,7 @@ switch day {
 
 
 ## Functions
+#### Python
 ```python
 def add(x, y):
     return x + y
@@ -134,6 +138,7 @@ print(result)
 
 ```
 
+#### Go
 ```go
 package main
 
@@ -152,12 +157,14 @@ func main() {
 
 
 ## Lists/Slices
+#### Python
 ```python
 numbers = [1, 2, 3, 4, 5]
 numbers.append(6)
 
 ```
 
+#### Go
 ```go
 numbers := []int{1, 2, 3, 4, 5}
 numbers = append(numbers, 6)
@@ -166,11 +173,13 @@ fmt.Println(numbers)
 
 
 ## Dictionaries/Maps
+#### Python
 ```python
 ages = {"Budi": 39, "Ahmar": 28}
 ages["Ahmar"] = 35
 ```
 
+#### Go
 ```go
 package main
 
@@ -185,6 +194,8 @@ func main() {
 
 
 ## Classes/Structs
+
+#### Python
 ```python
 class Person:
     def __init__(self, name, age):
@@ -198,13 +209,14 @@ person = Person("Budi", 30)
 print(person.greet())
 
 ```
-
+#### Go
 ```go
 
 ```
 
 
 ## Error Handling
+#### Python
 ```python
 try:
     result = 10 / 0
@@ -212,6 +224,7 @@ except ZeroDivisionError:
     print("Cannot divide by zero!")
 ```
 
+#### Go
 ```go
 package main
 
