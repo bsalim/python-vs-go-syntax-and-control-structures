@@ -257,4 +257,49 @@ func divide(a, b float64) (float64, error) {
 }
 ```
 
+## Concurrencies 
+
+#### Python
+```python
+import asyncio
+
+async def async_task(name, delay):
+    print(f"Task {name} started.")
+    await asyncio.sleep(delay)
+    print(f"Task {name} completed after {delay} seconds.")
+
+async def main():
+    task1 = asyncio.create_task(async_task("A", 2))
+    task2 = asyncio.create_task(async_task("B", 1))
+    
+    await task1
+    await task2
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+#### Go
+```go
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func asyncTask(name string, delay time.Duration) {
+	fmt.Printf("Task %s started.\n", name)
+	time.Sleep(delay)
+	fmt.Printf("Task %s completed after %v seconds.\n", name, delay.Seconds())
+}
+
+func main() {
+	go asyncTask("A", 2*time.Second)
+	go asyncTask("B", 1*time.Second)
+
+	// Wait for goroutines to complete (not ideal, for demo purposes only)
+	time.Sleep(3 * time.Second) // Ensure main doesn't exit before goroutines complete
+}```
+
 Enjoy and Happy Learning!
