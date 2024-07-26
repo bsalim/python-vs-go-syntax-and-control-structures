@@ -7,7 +7,7 @@ focusing on variables, control structures, functions, collections, and more.
 
 | **Concept**        | **Go Keywords**       | **Python Keywords**    | **Explanation**                                            |
 |--------------------|------------------------|------------------------|------------------------------------------------------------|
-| **Control Flow**   | `break`, `continue`, `for`, `if`, `return`, `switch`, `select`, `goto` | `break`, `continue`, `for`, `if`, `return`, `while`, `try` | Both languages use keywords to control flow and loops. `goto` in Go and `try` in Python handle jumps and exception handling. |
+| **Control Flow**   | `break`, `continue`, `for`, `if`, `return`, `switch`, `select`, `goto` | `break`, `continue`, `for`, `if`, `return`, `while`, `try`, `match` | Both languages use keywords to control flow and loops. `goto` in Go and `try` in Python handle jumps and exception handling. |
 | **Functions**      | `func`                 | `def`                  | Both use keywords to define functions (`func` in Go, `def` in Python). |
 | **Data Structures**| `struct`, `map`, `interface`, `chan` | `class`, `lambda`, `with` | Go uses `struct` for data structures, while Python uses `class`. `interface` in Go and `class` in Python handle type definitions. |
 | **Concurrency**    | `go`, `chan`, `select` | (None directly)        | Go includes keywords for concurrency; Python has `async` and `await` (not listed in the table) for similar purposes. |
