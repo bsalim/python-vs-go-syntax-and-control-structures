@@ -3,6 +3,18 @@
 While I am brushing up Go programming language from a Pythonista perspective, I am relearning everything from zero. I documented the cheatsheet here as a side by side comparison, 
 focusing on variables, control structures, functions, collections, and more.
 
+## Keywords comparison
+
+| **Concept**        | **Go Keywords**       | **Python Keywords**    | **Explanation**                                            |
+|--------------------|------------------------|------------------------|------------------------------------------------------------|
+| **Control Flow**   | `break`, `continue`, `for`, `if`, `return`, `switch`, `select`, `goto` | `break`, `continue`, `for`, `if`, `return`, `while`, `try` | Both languages use keywords to control flow and loops. `goto` in Go and `try` in Python handle jumps and exception handling. |
+| **Functions**      | `func`                 | `def`                  | Both use keywords to define functions (`func` in Go, `def` in Python). |
+| **Data Structures**| `struct`, `map`, `interface`, `chan` | `class`, `lambda`, `with` | Go uses `struct` for data structures, while Python uses `class`. `interface` in Go and `class` in Python handle type definitions. |
+| **Concurrency**    | `go`, `chan`, `select` | (None directly)        | Go includes keywords for concurrency; Python has `async` and `await` (not listed in the table) for similar purposes. |
+| **Error Handling** | `defer`, `panic`       | `try`, `except`, `finally` | Both handle errors and exceptions with special constructs. Go uses `defer` and `panic`, while Python uses `try`, `except`, and `finally`. |
+| **Logic Operations** | `and`, `or`, `not`    | `and`, `or`, `not`     | Both languages use these keywords for logical operations. |
+| **Variable Scope** | `var`, `const`         | `global`, `nonlocal`   | Go uses `var` and `const` for variable declarations, while Python uses `global` and `nonlocal` for variable scope. |
+| **Package and Modules** | `package`, `import`  | `import`               | Both languages use `import` to include modules/packages. Go also has `package` to define the package name. |
 
 ## Hello World
 
