@@ -296,22 +296,22 @@ if __name__ == "__main__":
 package main
 
 import (
-	"fmt"
-	"time"
+    "fmt"
+    "time"
 )
 
 func asyncTask(name string, delay time.Duration) {
-	fmt.Printf("Task %s started.\n", name)
-	time.Sleep(delay)
-	fmt.Printf("Task %s completed after %v seconds.\n", name, delay.Seconds())
+    fmt.Printf("Task %s started.\n", name)
+    time.Sleep(delay)
+    fmt.Printf("Task %s completed after %v seconds.\n", name, delay.Seconds())
 }
 
 func main() {
-	go asyncTask("A", 2*time.Second)
-	go asyncTask("B", 1*time.Second)
+    go asyncTask("A", 2*time.Second)
+    go asyncTask("B", 1*time.Second)
 
 	// Wait for goroutines to complete (not ideal, for demo purposes only)
-	time.Sleep(3 * time.Second) // Ensure main doesn't exit before goroutines complete
+    time.Sleep(3 * time.Second) // Ensure main doesn't exit before goroutines complete
 }```
 
 Enjoy and Happy Learning!
